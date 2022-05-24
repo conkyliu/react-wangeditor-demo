@@ -16,7 +16,7 @@ function MyEditor() {
         setTimeout(() => {
             setHtml('<p>hello&nbsp;<strong>world</strong>.</p>\n<p><br></p>')
         }, 1500)；
-        edior.on('change',html=>{console.log('-------html-----',html)})
+        editor?.on('change',html=>{console.log('-------html-----',html)})
         
     }, [])
 
