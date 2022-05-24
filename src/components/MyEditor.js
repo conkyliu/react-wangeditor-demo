@@ -15,7 +15,9 @@ function MyEditor() {
     useEffect(() => {
         setTimeout(() => {
             setHtml('<p>hello&nbsp;<strong>world</strong>.</p>\n<p><br></p>')
-        }, 1500)
+        }, 1500)；
+        edior.on('change',html=>{console.log('-------html-----',html)})
+        
     }, [])
 
     const toolbarConfig = { }
