@@ -60,7 +60,10 @@ function MyEditor() {
                     defaultConfig={editorConfig}
                     value={html}
                     onCreated={setEditor}
-                    onChange={editor => setHtml(editor.getHtml())}
+                    onChange={editor => {
+                              setHtml(editor.getHtml();
+                              editor.emit('change',editor.getHtml();
+})}
                     mode="default"
                     style={{ height: '500px' }}
                 />
