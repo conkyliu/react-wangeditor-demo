@@ -15,8 +15,8 @@ function MyEditor() {
     useEffect(() => {
         setTimeout(() => {
             setHtml('<p>hello&nbsp;<strong>world</strong>.</p>\n<p><br></p>')
-        }, 1500)；
-        editor?.on('change',html=>{console.log('-------html-----',html)})
+        }, 1500);
+        editor?.on('change',html=>{console.log('-------html-----',html)});
         
     }, [])
 
